@@ -1,0 +1,28 @@
+:root {
+    --color-base: #ffffff;
+    --color-1: #97d5f0;
+    --color-2: #6977e0;
+}
+
+body {
+    background: -webkit-linear-gradient(to right, var(--color-base), var(--color-1), var(--color-2), var(--color-2), var(--color-1), var(--color-2), var(--color-base));
+    background: linear-gradient(to right, var(--color-base), var(--color-1), var(--color-2), var(--color-2), var(--color-1), var(--color-2), var(--color-base));
+    background-size: 400% 400%;
+    animation: gradient 18s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    margin-top: 30px;
+}
